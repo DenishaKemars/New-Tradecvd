@@ -21,7 +21,10 @@ if (!empty($companyInfoRows[0])) {
 }
 
 $ProjectSetting = new ProjectSetting();
-$ProjectSetting = $DB->getsettingdata('ProjectSetting')[0];
+$projectSettingRows = $DB->getsettingdata('ProjectSetting');
+if (!empty($projectSettingRows[0])) {
+    $ProjectSetting = $projectSettingRows[0];
+}
 
 $errmsg=$config->getErrmsg();
 $serviceurl=$config->getEndpointurl();

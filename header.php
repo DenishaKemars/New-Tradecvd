@@ -8,7 +8,7 @@
            <span class="sparkle sparkle-two" aria-hidden="true"></span>
            <span class="sparkle sparkle-three" aria-hidden="true"></span>
            <div class="logo-wrap">
-              <img src="<?php echo $config->getImageurl() ?>images/header-sticky.svg"" alt="Trade CVD">
+              <img src="<?php echo $config->getImageurl() ?>images/header-sticky.svg" alt="Trade CVD">
           </div>
        </div>
     </div> 
@@ -19,6 +19,16 @@
         <img src="<?php echo $config->getImageurl() ?>images/loader.gif" class="img-fluid" alt="logo" width="100px" height="100px">
     </div>
 </div> -->
+<script>
+(function () {
+    var hidePreloader = function () {
+        var preloader = document.querySelector('.preloader-activate');
+        if (preloader) preloader.classList.remove('preloader-active');
+    };
+    window.addEventListener('load', function () { setTimeout(hidePreloader, 1000); });
+    setTimeout(hidePreloader, 5000);
+}());
+</script>
 <!--====================  End of preloader  ====================-->
 <!--====================  header area ====================-->
 <div class="header-area header-sticky ">
