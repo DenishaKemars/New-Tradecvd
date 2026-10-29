@@ -1,0 +1,31 @@
+# Runtime and dependency directories
+/config/vendor/
+/vendor_2/
+/vendor/
+node_modules/
+
+# Environment and credentials
+.env
+.env.*
+*.pem
+credentials.json
+**/credentials.json
+config/jwt-token-keys/
+
+# User-generated files and database backups
+assets/uploads/
+assets/uploads1/
+admin/assets/uploads/
+client/assets/uploads/
+savanigems_db_backup/
+*.sql
+*.sql.gz
+
+# Local and IDE files
+.vscode/
+.idea/
+*.log
+*.tmp
+error_log
+.DS_Store
+Thumbs.db
