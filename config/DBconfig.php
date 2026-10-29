@@ -28,11 +28,11 @@ class DBconfig extends DB{
             // $Config_DBpassword='';
             // $Config_DBport='3306';
 
-            $Config_DBhost='localhost';
-            $Config_DBuser='iis';
-            $Config_DBpassword=getenv('DB_PASSWORD_DEV');
-            $Config_DBname='savanigems';
-            $Config_DBport='3307';
+            $Config_DBhost='127.0.0.1';
+            $Config_DBuser='root';
+            $Config_DBpassword='';
+            $Config_DBname='tradecvd_websitedb';
+            $Config_DBport='3306';
         }
         else if($config->getServermode()=='uat')
         {   
@@ -45,11 +45,16 @@ class DBconfig extends DB{
         }
         else if($config->getServermode()=='prod')
         {
-            $Config_DBname='tradecvd_websitedb';
-            $Config_DBuser='tradecvd_websiteuser19';
-            $Config_DBhost='localhost';
-            $Config_DBpassword=getenv('DB_PASSWORD_PROD');
-            $Config_DBport='3306';
+            // $Config_DBname='tradecvd_websitedb';
+            // $Config_DBuser='tradecvd_websiteuser19';
+            // $Config_DBhost='localhost';
+            // $Config_DBpassword=getenv('DB_PASSWORD_PROD');
+            // $Config_DBport='3306';
+            $Config_DBname = 'tradecvd_websitedb';
+            $Config_DBuser = 'root';
+            $Config_DBhost = '127.0.0.1';
+            $Config_DBpassword = '';
+            $Config_DBport = '3306';
         }
 
         //Main Database connection

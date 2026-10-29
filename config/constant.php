@@ -7,8 +7,8 @@ class constant
 
     function  __construct()
 	{
-        $this->protocolname = 'https://';  // http:// or https://
-		$this->servermodename= 'prod'; // prod - Live | uat - test | dev = development
+        $this->protocolname = 'http://';  // http:// or https://
+		$this->servermodename= 'dev'; // prod - Live | uat - test | dev = development
     } 
 
 

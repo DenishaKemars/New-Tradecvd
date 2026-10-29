@@ -170,7 +170,7 @@ class config {
     if ($this->servermode == "dev") // Development 
     {
 		$this->docroot= $_SERVER['DOCUMENT_ROOT'].'/';
-		$this->maindirpath='/Savanigems_New/';
+		$this->maindirpath='/tradecvd/';
         $this->dirpath=$this->maindirpath.'admin/';  /* Directory Name also look in index.php script tag*/
         $this->host=$_SERVER['HTTP_HOST'].$this->dirpath;
         $this->weburl = $this->protocol.$this->host;
