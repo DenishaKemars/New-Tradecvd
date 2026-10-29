@@ -58,7 +58,7 @@ if ($LoginInfo->getIsguestuser() == 0) {
                                                     <div class="login-header text-center">
                                                         <div class="login-header-inner">
                                                             <div class="login-title">
-                                                                <p class="sec-title text-blue"><a class="logo-image" href="<?php echo $config->getWeburl(); ?>home"><img width="100%" src="<?php echo $config->getImageurl(); ?><?php echo $CompanyInfo->getLogoimg(); ?>" alt="Trade CVD"></a></p>
+                                                                <p class="sec-title text-blue"><a class="logo-image" href="<?php echo $config->getWeburl(); ?>home"><img width="100%" src="<?php echo $config->getImageurl(); ?>images/gems.png" alt="Trade CVD"></a></p>
                                                             </div>
                                                             <div class="sec-desc">
                                                                 <h3 class="login-desc titl">Welcome back</h3>

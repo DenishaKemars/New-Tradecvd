@@ -23844,6 +23844,34 @@ a.forgot-pass-link {
   height: 100%;
 }
 
+.login-wrpper > .row {
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.login-wrpper > .row > .col-lg-10 {
+  max-width: 83.333333%;
+  flex: 0 0 83.333333%;
+}
+
+.login-inner-wrapper .login-card-outer,
+.login-inner-wrapper .login-outer,
+.login-inner-wrapper .login-card {
+  width: 100%;
+}
+
+.login-inner-wrapper .login-card {
+  min-width: 0;
+}
+
+@media (max-width: 991.98px) {
+  .login-wrpper > .row > .col-lg-10 {
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+}
+
 .back-to-login {
   color: var(--green);
   margin-top: 10px;

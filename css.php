@@ -34,7 +34,7 @@
 
 <!-- Main Style CSS -->
 <!-- <link rel="stylesheet" href="<?php echo $config->getCdnurl(); ?>assets/css/style.css"> -->
-<link rel="stylesheet" href="<?php echo $config->getCdnurl(); ?>assets/css/style_new.css">
+<link rel="stylesheet" href="<?php echo $config->getCdnurl(); ?>assets/css/style_new.css?v=20261029">
 
 <!-- Revolution Slider CSS -->
 <link href="<?php echo $config->getCdnurl(); ?>assets/revolution/css/settings.css" rel="stylesheet">
