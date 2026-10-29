@@ -15,8 +15,10 @@ $LoginInfo = new LoginInfo();
 $IISMethods = new IISMethods();
 $config = new config();
 $CompanyInfo = new CompanyInfo();
-
-$CompanyInfo=$DB->getcompanyinfo($config->getDefaultCmpId(),'CompanyInfo')[0]; 
+$companyInfoRows = $DB->getcompanyinfo($config->getDefaultCmpId(), 'CompanyInfo');
+if (!empty($companyInfoRows[0])) {
+    $CompanyInfo = $companyInfoRows[0];
+}
 
 $ProjectSetting = new ProjectSetting();
 $ProjectSetting = $DB->getsettingdata('ProjectSetting')[0];
